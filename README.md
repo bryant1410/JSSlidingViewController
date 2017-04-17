@@ -124,7 +124,7 @@ This effect is only active when the slider is open.
 
 ## Delegate Protocol
 
-###Opening and Closing Events
+### Opening and Closing Events
 
 JSSlidingViewController also supports the following optional delegate methods, which are called whether or not the opening/closing was performed manually or programmatically:
 
@@ -175,7 +175,7 @@ Lastly, you can control the interface orientation methods via two additional del
 
 Some of these scroll view delegate method implementations may look quite strange, but it has to do with the peculiarities of the timing and circumstances of UIScrollViewDelegate callbacks. Numerous bugs and unusual edge cases have been accounted for via rigorous testing. Edit these with extreme care!!!
  
-###How It Works:
+### How It Works:
  
 1. The slidingScrollView is a container for the frontmost content. The back-most content is not a part of the slidingScrollView's hierarchy. The slidingScrollView has a clear background color, which masks the technique I'm using. To make it easier to see what's happening, try temporarily setting it's background color to a semi-translucent color in the *setupSlidingScrollView* method.
  
